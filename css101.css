@@ -1,0 +1,51 @@
+header {
+	border: 1px solid darkgrey;
+}
+
+ul.nav > li {
+	display: inline;
+	list-style: none;
+	margin: 0 8em 0 auto;
+}
+
+.disabled {
+	color: grey; 
+}
+
+.a > .disabled {
+	color: purple;
+}
+
+.active {
+	color: yellow;
+}
+
+.parent > div > div:nth-of-type(2n+1)  {
+	color: red;
+}
+
+.parent > div > div:nth-of-type(2n+0) {
+	color: blue;
+}
+
+.parent > div > :h4:nth-of-type(2n+1) {
+	background-color: red;
+}
+
+
+
+.grandparent > h4 {
+	border: 1px solid black;
+	border-radius: 5%;
+}
+	
+
+/* 
+  1. Any text in an element with class "disabled" should be colored grey, unless it is inside an anchor tag. If inside an anchor, it should be colored purple.
+  2. Any text inside an element with a class of "active" should be colored yellow.
+  3. Section elements should be contained within an article element. 
+*/
+/*
+ul > li:not(:last-child)::after {
+  content: ",";
+}*/
