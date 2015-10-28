@@ -1,0 +1,16 @@
+article {
+	border: 1px solid black;
+}
+
+#fruit-list :first-of-type {
+	font-weight: bold;
+}
+
+#fruit-list :last-of-type {
+	font-size: 20px;
+	background-color: #90C3D4;
+}
+
+#fruit-list {
+	background-color: #D4A190;
+}
